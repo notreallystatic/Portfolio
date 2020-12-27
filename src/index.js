@@ -15,7 +15,9 @@ const App = () => {
 
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}>
-      <Button onClick={() => setUseDarkTheme(!useDarkTheme)}>Dark Theme</Button>
+      <PrimaryButton onClick={() => setUseDarkTheme(!useDarkTheme)}>
+        Dark Theme
+      </PrimaryButton>
       <div style={{ margin: '10px' }}>
         <PrimaryButton modifiers='small'>small</PrimaryButton>&emsp;
         <SecondaryButton modifiers='small'>small</SecondaryButton>&emsp;

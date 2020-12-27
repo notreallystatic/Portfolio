@@ -5,7 +5,7 @@ import { typeScale, primaryFont } from './../utils';
 
 export const BUTTON_MODIFIERS = {
   small: () => `
-    padding: 8px;
+    padding: 4px;
     font-size: ${typeScale.helperText};
   `,
   large: () => `
@@ -110,6 +110,12 @@ export const SecondaryButton = styled(Button)`
     color: ${(props) => props.theme.disabled};
     cursor: not-allowed;
   }
+  &:hover {
+    border: 2px solid ${(props) => props.theme.primaryHoverColor};
+  }
+  &:active {
+    border: 2px solid ${(props) => props.theme.primaryActiveColor};
+  }
   ${applyStyleModifiers(BUTTON_MODIFIERS)};
 `;
 
@@ -121,27 +127,9 @@ export const TertiaryButton = styled(Button)`
     color: ${(props) => props.theme.disabled};
     cursor: not-allowed;
   }
+
+  &:hover:disabled {
+    color: white;
+  }
   ${applyStyleModifiers(BUTTON_MODIFIERS)};
 `;
-
-// export const Button = styled.button`
-//   margin: 0 16px 24px;
-//   padding: 8px;
-//   background: ${(props) => props.theme.primaryColor};
-//   color: ${(props) => props.theme.textColor};
-//   border: none;
-//   border-radius: 4px;
-
-//   &:hover {
-//     background: ${(props) => props.theme.primaryHoverColor};
-//   }
-
-//   &:focus {
-//     outline: none;
-//     box-shadow: 0 0 3pt 2pt ${(props) => props.theme.primaryColor};
-//   }
-
-//   &:active {
-//     transform: translate(2px, 1px);
-//   }
-// `;

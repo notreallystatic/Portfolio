@@ -2,9 +2,10 @@ import { primary, darkPrimary, neutral, yellow, green, red } from './colors';
 import { primaryFont } from './typography';
 
 export const defaultTheme = {
+  bodyBackground: neutral[100],
   primaryColor: primary[100],
   primaryHoverColor: primary[200],
-  primaryActiveColor: darkPrimary[100],
+  primaryActiveColor: primary[300],
   formElementBackground: neutral[100],
   textOnFormElementBackground: neutral[600],
   textColorOnPrimary: neutral[100],
@@ -29,13 +30,14 @@ export const defaultTheme = {
 };
 
 export const darkTheme = {
+  bodyBackground: '#222831',
   primaryColor: darkPrimary[100],
   primaryHoverColor: darkPrimary[200],
   primaryActiveColor: darkPrimary[300],
-  formElementBackground: neutral[600],
-  textOnFormElementBackground: neutral[100],
+  formElementBackground: '#393e46',
+  textOnFormElementBackground: neutral[200],
   textColorOnPrimary: neutral[100],
-  textColor: neutral[100],
+  textColor: neutral[300],
   textColorInverted: neutral[100],
   primaryFont: primaryFont,
   disabled: neutral[500],

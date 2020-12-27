@@ -5,6 +5,7 @@ import { normalize } from 'polished';
 export const GlobalStyle = createGlobalStyle`
 ${normalize()}
 html {
+  background: ${(props) => props.theme.bodyBackground};
   box-sizing: border-box;
   font-size: 16px;
 }

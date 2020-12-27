@@ -1,22 +1,99 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const Div = styled.div`
-  background: ${(props) => props.theme.formElementBackground};
-  color: ${(props) => props.theme.textColor};
-  width: 380px;
-  margin: 100px;
-  padding: 20px;
-  height: 263px;
-  left: 64px;
-  top: 62px;
-  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
-`;
+import {
+  Container,
+  Row,
+  Col,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  H6,
+  Paragraph,
+  CopyrightText,
+  HelperText,
+} from './components';
 
 export const Some = (props) => {
   return (
-    <Div>
-      <h5>another custom div right here</h5>
-    </Div>
+    <>
+      <Container>
+        <Row style={{ justifyContent: 'space-around' }}>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+          <Container
+            style={{
+              background: 'orangered',
+              minHeight: '50px',
+              minWidth: '50px',
+            }}
+          ></Container>
+        </Row>
+      </Container>
+      <Container>
+        <H1>This is a level one heading.</H1>
+        <H2>This is a level two heading.</H2>
+        <H3>This is a level three heading.</H3>
+        <H4>This is a level four heading.</H4>
+        <H5>This is a level five heading.</H5>
+        <H6>This is a level six heading.</H6>
+        <Paragraph>
+          This is a pargraph. This is a pargraph. This is a pargraph. This is a
+          pargraph. This is a pargraph. This is a pargraph. This is a pargraph.
+          This is a pargraph. This is a pargraph. This is a pargraph. This is a
+          pargraph. This is a pargraph.{' '}
+        </Paragraph>
+        <HelperText>Helper text is also very small.</HelperText>
+        <CopyrightText>Copyright Sachin Sheoran 2020</CopyrightText>
+      </Container>
+    </>
   );
 };
