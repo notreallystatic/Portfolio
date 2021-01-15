@@ -6,6 +6,7 @@ export const Container = styled.div`
   color: ${(props) => props.theme.textColor};
   margin: 20px;
   padding: 20px;
+  border-radius: 0.75rem;
   filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.4));
 `;
 

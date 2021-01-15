@@ -5,7 +5,6 @@ import { normalize } from 'polished';
 export const GlobalStyle = createGlobalStyle`
 ${normalize()}
 html {
-  background: ${(props) => props.theme.bodyBackground};
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -14,8 +13,9 @@ html {
 }
 body {
   margin: 0;
-  padding: 65px 0 0;
-  font-family: ${primaryFont}
+  padding: 0;
+  background: ${(props) => props.theme.bodyBackground};
+  font-family: ${primaryFont};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

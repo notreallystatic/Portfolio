@@ -8,13 +8,16 @@ import {
   PrimaryButton,
   SecondaryButton,
   TertiaryButton,
+  Navbar,
 } from './components';
+import './App.css';
 
 const App = () => {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
 
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}>
+      <Navbar toggleDarkTheme={() => setUseDarkTheme(!useDarkTheme)} />
       <PrimaryButton onClick={() => setUseDarkTheme(!useDarkTheme)}>
         Dark Theme
       </PrimaryButton>
